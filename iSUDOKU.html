@@ -1779,17 +1779,16 @@
       /************************************************************************/
       function setSudoku(level) {
         var i;
-        var j = DIM + 1;
         var dcps, dcpm;
 
         switch (level) {
           default:
           case "easy":
-            dcps = getRandomIntInclusive(j, 2*j); // deleted cells per submatrix
+            dcps = DIM + 2; // deleted cells per submatrix
             break;
 
           case "hard":
-            dcps = getRandomIntInclusive(2*j, 3*j); // deleted cells per submatrix
+            dcps = DIM + 3; // deleted cells per submatrix
             break;
         }
 
