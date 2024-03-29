@@ -1,4 +1,4 @@
-# iSUDOKU
+# <span style='color: red !important'>i</span>SUDOKU
 This sudoku game is for fun, although sudoku is not guaranteed to have a unique solution.
 
-**iSUDOKU** is a web application programmed in *HTML* and *JavaScript* in a single `.html` file.
+**<span style='color: red !important'>i</span>SUDOKU** is a web application programmed in *HTML* and *JavaScript* in a single `.html` file.
