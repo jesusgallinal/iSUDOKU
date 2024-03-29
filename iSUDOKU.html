@@ -1784,11 +1784,16 @@
         switch (level) {
           default:
           case "easy":
-            dcps = DIM + 2; // deleted cells per submatrix
+            dcps = getRandomIntInclusive(DIM+1, DIM+2); // deleted cells per submatrix
             break;
 
           case "hard":
-            dcps = DIM + 3; // deleted cells per submatrix
+            if (DIM > 0) {
+              dcps = getRandomIntInclusive(DIM+3, DIM+4); // deleted cells per submatrix
+            } else {
+              dcps = getRandomIntInclusive(DIM+2, DIM+3); // deleted cells per submatrix
+            }
+
             break;
         }
 
